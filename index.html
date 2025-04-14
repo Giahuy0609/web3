@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chúc Mừng Sinh Nhật</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1>🎂Chúc mừng sinh nhật ba Tuyến🎉</h1>
+      </div>
+      
+
+      <div class="kapsama">
+        <div class="cake" id="cake">
+          <div class="plate"></div>
+          <div class="layer layer-bottom"></div>
+          <div class="layer layer-middle"></div>
+          <div class="layer layer-top"></div>
+          <div class="icing"></div>
+          <div class="drip drip1"></div>
+          <div class="drip drip2"></div>
+          <div class="drip drip3"></div>
+          <p id="hintText" class="hint-text">🎂 Nhấp vào nút "Bắt Đầu" để thổi nến!</p>
+          <p class="arrow">👇</p>
+          <!-- Ví dụ thêm 3 cây nến cố định -->
+          <div class="candle" style="left: 120px;"><div class="flame"></div></div>
+          <div class="candle" style="left: 190px;"><div class="flame"></div></div>
+          <div class="candle" style="left: 260px;"><div class="flame"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="blowOutBtn">Bắt Đầu</button>
+      <button id="lightUpBtn" style="display: none;">Đốt Lại Nến</button>
+    </div>
+  </div>
+  <audio id="birthdaySong" src="./HappyBirthdayPianoVersion-Piano-13174307.mp3" preload="auto"></audio>
+  <div id="bubbles-container"></div>
+    <script src="/scripts.js"></script>
+    
+  </body>
+  <div id="mic-hint" style="
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  z-index: 9999;
+">
+  📣 Vui lòng cấp quyền micro để thổi nến!<br>
+  <span style="font-size: 12px;">(Nếu dùng iPhone, hãy kiểm tra trong Cài đặt > Safari > Micro)</span>
+</div>
+</html>
